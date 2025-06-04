@@ -1,14 +1,14 @@
 :root {
-  --primary-color: #73C2BE;
-  --secondary-color: #73EEDC;
-  --background-color: white;
-  --font-color: #73C2BE;
+  --primary-color: #2E3138;
+  --secondary-color: #202327;
+  --background-color: #15181E;
+  --font-color: white;
   --heading-font: ;
   --spacing: ;
   --default-padding: 1em;
   --default-margin: 1em;
   --default-border-radius: 15px;
-  --default-box-shadow: 0 0 5px 1px var(--secondary-color);
+  --default-box-shadow: 1px 1px 5px 3px black;
   --p-size: 26px;
   --p-size-mobile: 20px;
   --h1-size: 40px;
@@ -27,6 +27,7 @@
   font-family: 'Times New Roman', Times, serif;
   margin: 0;
   transition: 0.4s;
+  background-color: var(--background-color);
 }
 
 .flex-style {

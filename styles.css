@@ -15,11 +15,49 @@ img {
     row-gap: 5em;
 }
 
+h1 {
+  color: #4FC1FF;
+}
+
+#let {
+  color: #1F66CA;
+}
+
+#equal {
+  color: white;
+}
+
+#string {
+  color: #CE9178;
+}
+
+h2 {
+  color: var(--font-color);
+}
+
+p {
+  color: var(--font-color);
+}
+
+
+#pEle {
+  color: #1F66CA;
+}
+
+#cardH2 {
+  background-color: var(--primary-color);
+  color: var(--font-color);
+}
+
+#cardP {
+  background-color: var(--primary-color);
+  color: var(--font-color);
+}
+
 #flipCard {
     background-color: transparent;
-    width: 40%;
-    height: 640px;
-    border: 1px solid #f1f1f1;
+    width: 200px;
+    height: 264px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
   
@@ -45,6 +83,9 @@ img {
     height: 100%;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: var(--default-border-radius);
+    box-shadow: var(--default-box-shadow);
   }
   
   /* Style the front side (fallback if image is missing) */
@@ -55,7 +96,7 @@ img {
   
   /* Style the back side */
   #flipCardBack {
-    background-color: dodgerblue;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--font-color);
     transform: rotateY(180deg);
   }
