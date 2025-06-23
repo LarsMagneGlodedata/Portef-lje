@@ -64,10 +64,9 @@ p {
     background-color: transparent;
     width: 200px;
     height: 264px;
-    perspective: 500px; /*Remove this if you don't want the 3D effect*/
+    perspective: 500px;
 }
   
-  /* This container is needed to position the front and back side */
 #flipCardInner {
   position: relative;
   width: 100%;
@@ -77,12 +76,10 @@ p {
   transform-style: preserve-3d;
 }
 
-  /* Do an horizontal flip when you move the mouse over the flip box container */
 #flipCard:hover #flipCardInner {
   transform: rotateY(180deg);
 }
   
-  /* Position the front and back side */
 #flipCardFront, #flipCardBack {
   position: absolute;
   width: 100%;
@@ -94,13 +91,11 @@ p {
   box-shadow: var(--default-box-shadow);
 }
 
-/* Style the front side (fallback if image is missing) */
 #flipCardFront {
   background-color: #bbb;
   color: black;
 }
 
-/* Style the back side */
 #flipCardBack {
   background-color: var(--primary-color);
   color: var(--font-color);

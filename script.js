@@ -11,13 +11,13 @@ function animateCard() {
     flipCard.animate(
         [
             {transform: 'rotateY(0deg)'},
-            {transform: 'rotateY(10deg)'},
-            {transform: 'rotateY(0deg)'},
-            {transform: 'rotateY(5deg)'},
+            {transform: 'rotateY(20deg)'},
+            {transform: 'rotateY(20deg)'},
+            {transform: 'rotateY(20deg)'},
             {transform: 'rotateY(0deg)'}
         ],
         {
-            duration: 800,
+            duration: 1000,
             easing: 'ease-in-out'
         }
     )
@@ -27,7 +27,7 @@ setInterval(function() {
     if (!isMouseOver) {
         animateCard()
     }
-}, 5000)
+}, 4000)
 
 // 
 
