@@ -1,4 +1,4 @@
-// Liten animajson for å visa at bilde kan flippast
+// Liten animajson for å hinta til at bilde kan flippast
 
 const flipCard = document.getElementById('flipCardInner')
 let isMouseOver = false
@@ -17,8 +17,8 @@ function animateCard() {
             {transform: 'rotateY(0deg)'}
         ],
         {
-            duration: 1000,
-            easing: 'ease-in-out'
+            duration: 1500,
+            easing: 'linear'
         }
     )
 }
@@ -27,7 +27,7 @@ setInterval(function() {
     if (!isMouseOver) {
         animateCard()
     }
-}, 4000)
+}, 5500)
 
 // 
 
@@ -99,5 +99,14 @@ document.addEventListener('DOMContentLoaded', function(event) {
         }
     }
 
-    startTextAnimation(0);
+    let isFirstMouseOver = 0
+    flipCard.addEventListener('mouseover', () => {
+        isFirstMouseOver++
+        if (isFirstMouseOver === 1)
+        startTextAnimation(0)
+    })
 });
+
+// 
+
+// 
